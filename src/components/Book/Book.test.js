@@ -28,5 +28,6 @@ describe('renders book and its contents', () => {
     const addingButtonElement = screen.getByRole("button", { name: /add/i });
     fireEvent.click(addingButtonElement);
     expect(mockedAddReadingList.mock.calls.length).toBe(1);
+    expect(mockedAddReadingList.mock.calls[0][0]).toBe(mockProps);
   })
 });

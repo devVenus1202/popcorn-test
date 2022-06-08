@@ -17,7 +17,7 @@ export default function Book({info, onAddReadingList}) {
       <div className="publishing-date">
         {publishedDate}
       </div>
-      <button name="Add" onClick={onAddReadingList}>Add To Reading List</button>
+      <button name="Add" onClick={() => onAddReadingList(info)}>Add To Reading List</button>
     </div>
   )
 }
