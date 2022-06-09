@@ -9,7 +9,7 @@ export default function Book({info, onAddReadingList}) {
         {title}
       </div>
       <div className="authors">
-        {authors.join(",")}
+        {authors && authors.join(",")}
       </div>
       <div className="publisher">
         {publisher}
