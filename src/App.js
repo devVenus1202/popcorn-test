@@ -9,6 +9,7 @@ function App() {
     <ReadingListContextProvider>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Books />} />
           <Route path="/books" element={<Books />} />
           <Route path="/reading-list" element={<ReadingList />} />
         </Routes>

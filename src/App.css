@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+input {
+  padding: 0.5rem;
+  border: solid 1px rgb(209, 213, 219);
+  border-radius: 3px;
+}
+button {
+  background-color: rgb(26, 86, 219);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 16px;
+  cursor: pointer;
+}
