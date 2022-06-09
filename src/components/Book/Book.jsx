@@ -19,7 +19,7 @@ export default function Book({ info, onAddReadingList, readingList }) {
 }
 Book.propTypes = {
   info: PropTypes.object.isRequired,
-  readingList: PropTypes.object.isRequired,
+  readingList: PropTypes.bool.isRequired,
   onAddReadingList: PropTypes.func.isRequired,
 };
 Book.defaultProps = {

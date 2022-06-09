@@ -1,7 +1,23 @@
-import React from 'react'
+import React from "react";
+import Book from "../../components/Book";
+import { useReadingList } from "../../contexts/ReadingListContext";
 
 export default function ReadingList() {
+  const { readingList, setBookForReadingList, checkReadingList } =
+    useReadingList();
+  console.log("readingList", readingList);
   return (
-    <div>ReadingList</div>
-  )
+    <div>
+      book
+      {readingList &&
+        readingList.map((book) => (
+          <Book
+            key={book.id}
+            info={book}
+            onAddReadingList={setBookForReadingList}
+            readingList={checkReadingList(book.id)}
+          ></Book>
+        ))}
+    </div>
+  );
 }

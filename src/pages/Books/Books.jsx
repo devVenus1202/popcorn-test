@@ -1,4 +1,5 @@
 import React, { useCallback, useState } from 'react'
+import { Link } from 'react-router-dom';
 import { getBooksWithQuery } from '../../apis'
 import Book from '../../components/Book';
 import { useReadingList } from '../../contexts/ReadingListContext';
@@ -27,6 +28,9 @@ export default function Books() {
     <div>
       <div className="search-wrapper">
         <input onChange={handleChange} />
+      </div>
+      <div>
+        <Link to={'/reading-list'}>Reading List</Link>
       </div>
       <p>Total results: {totalItems}</p>
       <div className="results-wrapper">
